@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Dictionary
+- It is a full responsive Dictionary applicaion
+- I have used react.js with fetch api
+
+![06 03 2023_00 18 12_REC](https://user-images.githubusercontent.com/112485199/222981037-80cf3149-e1b9-49b6-b65d-bc906b688bdf.png)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
