@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  background-color: #007BFF;
+  font-family: 'Poppins',sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 80px 50px;
+  border-radius: 24px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+ 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-block{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+.input-block input{
+  width: 80%;
+  border: none;
+  border-bottom: 2px solid #007bffcc;
+  padding:10px 0  6px 0;
+  font-size: 16px;
+  outline: none;
+}
+
+button{
+  padding: 8px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 8px;
+  transition: all .3s ease;
+  cursor: pointer;
+  font-weight: 500;
+}
+button:active{
+  transform: scale(0.92);
+}
+
+.meaning{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.meaning-grammer{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.word-meaning{
+  font-weight: 600;
+  font-size: 25px;
+}
+.meaning-details{
+  display: flex;
+  column-gap: 5px;
+
+}
+.word-grammar,
+.word-grammar2{
+  font-size: 14px;
+  font-weight: 400;
+  color: gray;
+  margin-top: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+p{
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.word-detail{
+  position: relative;
+}
+.word-detail p{
+  margin-left: 14px;
+}
+
+.word-detail::before{
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 100%;
+  background-color: #007BFF;
+}
+
+@media screen and (max-width:400px) {
+  .container{
+    padding: 40px 30px;
   }
 }
